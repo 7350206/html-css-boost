@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>css selectors</title>
+  <style>
+    .primary-heading {
+      color:red;
+    }
+
+    #welcome {
+      background-color: #c1c1c1;
+    }
+
+    /* multiple selectors */
+    #welcome, #about {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* nested selectors (p inside a welcome) */
+    #about p {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="green-heading">hi there</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, obcaecati voluptatibus. Expedita voluptatem eveniet incidunt eos dignissimos aliquam minima odio!sit amet consectetur adipisicing elit. Unde, obcaecati voluptatibus. Expedita voluptatem eveniet incidunt eos dignissimos aliquam minima </p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, obcaecati voluptatibus. Expedita voluptatem eveniet incidunt eos dignissimos aliquam minima odio!obcaecati voluptatibus. Expedita voluptatem eveniet incidunt eos dignissimos aliquam minima odio!</p>
+  </div>
+
+</body>
+</html>

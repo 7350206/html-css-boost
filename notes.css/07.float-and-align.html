@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Float & align</title>
+  <style>
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* centered layout */
+    .container {
+      /* use max-width to avoid scroll on mobile */
+      max-width: 960px;
+      margin: 50px auto;
+      border: 2px dashed #ff0000;
+    }
+
+    .box {
+      border: 2px dashed #000;
+      background: #c4c4c4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .box p {
+      text-align: center;
+      text-align: justify;
+      border: 1px solid red;
+    }
+
+    #box-2 {
+      float:left;
+      width: 68%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+
+    .clr {
+      clear: both
+    }
+
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <div id='box-1' class='box'>
+      <h3>heading-1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor blanditiis ut adipisci exercitationem vel laudantium eaque praesentium tenetur voluptas in fugit, facere quis dicta quos totam illum voluptatum officiis culpa!</p>
+    </div>
+    <div id='box-2' class='box'>
+      <h3>heading-2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus pariatur, at possimus distinctio, quis ratione culpa asperiores quod velit earum, ipsam a quibusdam cumque? Velit laudantium vel dignissimos deleniti aut.</p>
+    </div>
+    <div id='box-3' class='box'>
+      <h3>heading-3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, aliquid saepe? Asperiores tenetur consequatur perspiciatis debitis necessitatibus, numquam odio soluta sapiente error dolore aspernatur ullam? Eos magnam aliquid totam cumque.</p>
+    </div>
+    <div class='clr'>div with clear added here</div>
+    <div id='box-4' class='box'>
+      <h3>heading-3</h3>
+      <p>this box is putting actually BEHIND floated boxes, because floated boxes have to be cleared to brevent that.
+        add utility class <code>.clr {clear: both} </code>and add this to <code>div class="clr"</code>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
