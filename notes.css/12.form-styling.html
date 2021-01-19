@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>form styling</title>
+  <style>
+    *{
+      /* reset and prevent padding not affected width */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #344a72;
+      font-size: 1.3em;
+    }
+
+    a{
+      /* remove underline links */
+      text-decoration: none;
+    }
+
+    .container{
+      background: #fff;
+      max-width: 400px;
+      height: 600;
+      margin: 100px auto;
+    }
+
+    .form-wrap {
+      /* area around the form */
+      margin: 20px;
+    }
+
+    .form-wrap h3,
+    .form-wrap p {
+      /* center these */
+      text-align: center;
+    }
+
+    .form-wrap .form-group {
+      /* each label, input */
+    }
+
+    .form-wrap .form-group label {
+      /* must be block */
+      display: block;
+    }
+
+    .form-wrap .form-group input {
+      /* reach across whole form and have some padding */
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 18px;
+    }
+
+    .form-wrap button {
+      padding: 10px;
+      background: #00f;
+      color: #fff;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      border: none;
+      margin: 15px 0;
+    }
+
+    .form-wrap button:hover {
+      background: #f00;
+      cursor: pointer;
+    }
+
+    .form-wrap .bottom-text {
+      text-align: center;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      /* centered */
+      text-align: center;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+  <div class='container'>
+    <div class='form-wrap'>
+      <h3>Sign up</h3>
+      <p>its always free</p>
+      <form>
+        <div class='form-group'>
+          <label for='first-name'>First Name</label>
+          <input
+            type='text'
+            id="first-name"
+            name="firstName"
+          >
+        </div>
+        <div class='form-group'>
+          <label for='last-name'>Last Name</label>
+          <input
+            type='text'
+            id="last-name"
+            name="lastName"
+          >
+        </div>
+        <div class='form-group'>
+          <label for='email'>Email</label>
+          <input
+            type='email'
+            id="email"
+            name="email"
+          >
+        </div>
+        <div class='form-group'>
+          <label for='password'>Password</label>
+          <input
+            type='password'
+            id="password"
+            name="password"
+          >
+        </div>
+        <div class='form-group'>
+          <label for='password2'>Password again</label>
+          <input
+            type='password'
+            id="password2"
+            name="password2"
+          >
+        </div>
+        <button  type="submit" class='btn'>Submit</button>
+        <p class='bottom-text'>
+          need agree to <a href='#'>terms</a> and
+          <a href='#'>policy</a>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+  <footer>
+    already have an acc? <a href='#'>login here</a>
+  </footer>
+
+</body>
+</html>
