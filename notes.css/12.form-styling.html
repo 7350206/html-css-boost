@@ -15,7 +15,8 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #344a72;
-      font-size: 1.3em;
+      /* font-size: 1.3em; */
+      line-height: 1.8;
     }
 
     a{
@@ -24,15 +25,17 @@
     }
 
     .container{
-      background: #fff;
+      /* background: #fff; */
       max-width: 400px;
-      height: 600;
-      margin: 100px auto;
+      margin: 30px auto;
+      padding: 10px;
     }
 
     .form-wrap {
-      /* area around the form */
-      margin: 20px;
+      /* white area around the form */
+      background: #fff;
+      padding: 15px 25px;
+      /* margin: 20px; */
     }
 
     .form-wrap h3,
@@ -43,19 +46,22 @@
 
     .form-wrap .form-group {
       /* each label, input */
+      margin-top: 5px;
     }
 
     .form-wrap .form-group label {
       /* must be block */
       display: block;
+      color: #555
     }
 
     .form-wrap .form-group input {
       /* reach across whole form and have some padding */
       width: 100%;
-      margin-bottom: 10px;
       padding: 5px;
+      border: 1px solid #999;
       font-size: 18px;
+      margin-bottom: 10px;
     }
 
     .form-wrap button {
@@ -67,14 +73,15 @@
       width: 100%;
       border: none;
       margin: 15px 0;
+       cursor: pointer;
     }
 
     .form-wrap button:hover {
       background: #f00;
-      cursor: pointer;
     }
 
     .form-wrap .bottom-text {
+      font-size: 14px;
       text-align: center;
       padding-bottom: 5px;
     }
@@ -91,7 +98,7 @@
   <div class='container'>
     <div class='form-wrap'>
       <h3>Sign up</h3>
-      <p>its always free</p>
+      <p>its free for now and be paid soon</p>
       <form>
         <div class='form-group'>
           <label for='first-name'>First Name</label>
